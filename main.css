@@ -12,7 +12,7 @@ html, body {
     width: 100%;
     margin: auto;
     background: #000000;
-    cursor: url("/img/cur.png") 32 32, pointer; 
+    cursor: url("/img/cur.png") 6 6, pointer; 
     /* cursor: url("/img/IMG_80_x_50.png") 8 2, pointer;  */
 }
 .wrapper {
@@ -81,6 +81,25 @@ h2 {
     line-height: 36px;
     font-weight: 500;
 }
+    
+
+.text {
+    color: #ffffff;
+    /* width: 50%; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 0 40px;
+}
+span {
+    font-size: 26px;
+    color: #bbb;
+    text-shadow: 4px 2px 4px #8edfff;
+}
+.fixed { 
+    float: right;
+}
 
 .footer {
     width: 100%;
@@ -124,9 +143,14 @@ ul li img {
     height: 15px;
     padding: 5px 30px;
 }
-li a {
+.link {
     text-decoration: none;
     color: #bbb;
+    width: 100%;
+}
+.link:hover {
+    text-shadow: 2px 2px 4px #bbb;
+    cursor: url('/img/cur.png') 12 12, grab;
 }
 
 
@@ -143,7 +167,8 @@ img {
     width: 200px;
     height: 300px;
     margin: 20px;
-    filter: drop-shadow(7px 7px rgba(0, 162, 255, 0.136)); 
+    filter: drop-shadow(4px 4px #bbb); 
+    /* filter: drop-shadow(7px 7px rgba(0, 162, 255, 0.136));  */
     
 }
 .img:hover {
@@ -286,6 +311,16 @@ img {
     }
     .fon {
         margin-top: 100px;
+    }
+    .fixed {
+        float: none;
+    }
+    .text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    span {
+        font-size: 20px;
     }
     h2 {    
         font-size: 22px;
