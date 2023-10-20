@@ -12,7 +12,7 @@ html, body {
     width: 100%;
     margin: auto;
     background: #000000;
-    cursor: url("/img/cur.png") 6 6, pointer; 
+    cursor: url("img/cur.png") 6 6, pointer; 
     /* cursor: url("/img/IMG_80_x_50.png") 8 2, pointer;  */
 }
 .wrapper {
@@ -35,7 +35,7 @@ html, body {
     background: #000000c8;
 }
 .fon {
-    background-image: url('/img/fff.png');
+    background-image: url("img/fff.png");
     width: 100vw;
     height: 100wh; 
     display: flex;
@@ -78,7 +78,7 @@ h2 {
     /* font-family: serif; */
    
     font-size: 28px;
-    line-height: 36px;
+    line-height: 44px;
     font-weight: 500;
 }
     
@@ -90,12 +90,15 @@ h2 {
     font-size: 20px;
     line-height: 36px;
     font-weight: 500;
-    padding: 0 40px;
+    /* padding: 0 40px; */
+    width: 70%;
 }
 span {
     font-size: 26px;
     color: #bbb;
-    text-shadow: 4px 2px 4px #8edfff;
+    /* text-shadow: 4px 2px 4px #1bbeff8d; */
+    text-shadow: 2px 2px 6px #18aaffb9;
+
 }
 .fixed { 
     float: right;
@@ -105,17 +108,17 @@ span {
     width: 100%;
     height: 100px;
     /* min-height: 100%; */
-    background: #00000000;
+    background: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* margin-top: 80px; */
 } 
-/* .links {
-    display: flex;
-    height: 100px;
-}*/
+/* .link {
+    font-size: 20px;
+    color:rgb(1, 252, 101);
+} */
 ul {
     display: flex;
     flex-direction: column;
@@ -147,10 +150,13 @@ ul li img {
     text-decoration: none;
     color: #bbb;
     width: 100%;
+    font-size: 20px;
 }
 .link:hover {
-    text-shadow: 2px 2px 4px #bbb;
-    cursor: url('/img/cur.png') 12 12, grab;
+    /* text-shadow: 2px 2px 4px #bbb; */
+    text-shadow: 2px 2px 8px #18aaff;
+
+    cursor: url("img/cur.png") 12 12, grab;
 }
 
 
@@ -168,14 +174,15 @@ img {
     height: 300px;
     margin: 20px;
     filter: drop-shadow(4px 4px #bbb); 
+
     /* filter: drop-shadow(7px 7px rgba(0, 162, 255, 0.136));  */
     
 }
 .img:hover {
     display: flex;
     justify-content: center;
-    -webkit-filter: drop-shadow(0 0 50px  #a5a5a5);
-    filter: drop-shadow(0 0 40px #ffffff4e);
+    /* -webkit-filter: drop-shadow(0 0 50px  #a5a5a5); */
+    filter: drop-shadow(0 0 40px #bbbbbb75);
 }
 .menu {
     display: flex;
@@ -193,7 +200,7 @@ img {
 
 }
 .imgMenu a {
-    background-image: url("/img/top.png");
+    background-image: url("img/top.png");
     background-position:-15px 14px;
     background-repeat: no-repeat;
     width: 260px;
@@ -205,7 +212,7 @@ img {
     color:#bbbbbb;
 }
 .imgMenu:hover a {
-    background-image: url("/img/IMG_120_x_70.png");
+    background-image: url("img/IMG_120_x_70.png");
     background-position: 15px 20px;
     background-repeat: no-repeat;
     
@@ -215,8 +222,9 @@ img {
     
     width: 240px;
     height: 100px;
-    color: #0086ce;
-    cursor: url(/img/cur.png) 12 12, grab;
+    /* color: #0086ce; */
+    text-shadow: 2px 2px 8px #18aaff;
+    cursor: url("img/cur.png") 12 12, grab;
 }
 
 
@@ -264,7 +272,7 @@ img {
     z-index: 9;
     letter-spacing: 1px;
     text-transform: uppercase;
-    cursor: url(/img/cur.png) 12 12, grab;
+    cursor: url("img/cur.png") 12 12, grab;
 }
 .circle button {
     width: 260px;
@@ -312,23 +320,22 @@ img {
     .fon {
         margin-top: 100px;
     }
-    .fixed {
-        float: none;
-    }
     .text {
         font-size: 16px;
-        line-height: 26px;
+        line-height: 24px;
+        width: 100%;
+        padding: 5px 70px;
     }
     span {
         font-size: 20px;
     }
-    h2 {    
-        font-size: 22px;
+    h2 {  
+        font-size: 18px;
         line-height: 28px;
         margin: 20px 50px ;
     }
     .menu {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         gap: 2px;
         height: 80px;
@@ -346,7 +353,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("/img/IMG_120_x_70.png");
+        background-image: url("img/IMG_120_x_70.png");
         background-position: 4px 14px;
         background-repeat: no-repeat;
         width: 120px;
@@ -355,6 +362,9 @@ img {
     .img {
         width: 150px;
         height: 250px;
+    }
+    .link {
+        font-size: 14px;
     }
 
     /* .footer {
@@ -411,11 +421,16 @@ img {
         margin-top: 60px;
     }
     .menu {
-        font-size: 12px;
-        font-weight: 300;
+        font-size: 16px;
         gap: 2px;
         height: 50px;
     } 
+    .text {
+        padding: 1px 50px;
+    }
+    .fixed {
+        float: none;
+    }
     .img {
         margin: 20px 20px 100px 20px;
     }
@@ -433,7 +448,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("/img/IMG_80_x_50.png");
+        background-image: url("img/IMG_80_x_50.png");
         background-position: 4px 4px;
         background-repeat: no-repeat;
         width: 80px;
