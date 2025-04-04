@@ -5,69 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Site-card</title>
-    <link rel="icon" href="img/favicon.ico">
+    <!-- <link rel="icon" href="img/favicon.ico"> -->
+    <link rel="icon" href="img/favico.ico">
     <link rel="stylesheet" href="main.css">
-</head>
 
+    <script defer src="./js/burgerRight.js"></script>
+</head>
 <body>
     <div class="wrapper">
 
         <header class="header">
-            <div class="header-content">
+            <div class="header__content">
+
                 <div class="logo">
-                    <img class="header-logo" src="./img/cur.png" alt="logo">
+                    <a href="index.html">
+                        <img class="header-logo" src="./img/cur.png" alt="logo">
+                    </a>
                 </div>
 
-                <div class="header-menu">
-                    <div class="menu imgMenu">
-                        <a href="index.html">Main</a>
-                    </div>
-                    <div class="menu imgMenu">
-                        <a href="about.html">About me</a>
-                    </div>
-                    <div class="menu imgMenu">
-                        <a href="portfolio.html">Portfolio</a>
-                    </div>
-                </div>
+                <button class="header_burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav class="header-menu" id="menu">
+                    <ul class="menu_list">
+                        <li class="menu imgMenu">
+                            <a href="index.html">Main</a>
+                        </li>
+                        <li class="menu imgMenu">
+                            <a href="about.html">About me</a>
+                        </li>
+                        <li class="menu imgMenu">
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
 
             </div>
         </header>
 
         <main class="main">
-            <h2 class="main-text">Hello there, <br>
-                my name is Inna and im frontend-developer! :)
-            </h2>
-            <div class="main-img">
-                <img src="img/my.jpg" alt="" class="img">
+
+            <div class="main__content">
+                <h2 class="main-text">Hello there,
+                    my name is Inna and i'm frontend-developer!
+                </h2>
+                <div class="main-img">
+                    <img src="img/my.jpg" alt="" class="img">
+                </div>
             </div>
+
         </main>
 
         <footer class="footer">
-            <ul class="links">
-                <li>
-                    <a class="link" href="https://discord.com/l_of_d" target="_blank">
-                        <img class="footer-img" src="./img/ds.png" alt="discord">
-                        Discord
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="https://t.me/l_of_d/" target="_blank">
-                        <img class="footer-img" src="./img/tg.png" alt="telegram">
-                        Telegram
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="https://github.com/Inna-html" target="_blank">
-                        <img class="footer-img github" src="./img/git1.png" alt="GitHub">
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+            <div class="footer__content">
+                <ul class="links">
+                    <li>
+                        <a class="link" href="https://t.me/l_of_d/" target="_blank">
+                            <img class="footer-img" src="./img/tg.png" alt="telegram">
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://github.com/Inna-html" target="_blank">
+                            <img class="footer-img github" src="./img/git1.png" alt="GitHub">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </footer>
 
     </div>
 
-    <!-- <script src="./index.js"></script> -->
 </body>
 
 </html>

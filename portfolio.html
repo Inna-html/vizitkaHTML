@@ -5,115 +5,285 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Site-card</title>
-    <link rel="icon" href="img/favicon.ico">
+    <!-- <link rel="icon" href="./img/favicon.ico"> -->
+    <link rel="icon" href="img/favico.ico">
     <link rel="stylesheet" href="main.css">
+
+    <script defer src="./js/burgerRight.js"></script>
+    <script defer src="./js/portfolio.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
 
         <header class="header">
-            <div class="header-content">
+
+            <div class="header__content">
                 <div class="logo">
-                    <img class="header-logo" src="./img/cur.png" alt="logo">
+                    <a href="index.html">
+                        <img class="header-logo" src="./img/cur.png" alt="logo">
+                    </a>
                 </div>
 
-                <div class="header-menu">
-                    <div class="menu imgMenu">
-                        <a href="index.html">Main</a>
-                    </div>
-                    <div class="menu imgMenu">
-                        <a href="about.html">About me</a>
-                    </div>
-                    <div class="menu imgMenu">
-                        <a href="portfolio.html">Portfolio</a>
-                    </div>
-                </div>
+                <button class="header_burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav class="header-menu" id="menu">
+                    <ul class="menu_list">
+                        <li class="menu imgMenu">
+                            <a href="index.html">Main</a>
+                        </li>
+                        <li class="menu imgMenu">
+                            <a href="about.html">About me</a>
+                        </li>
+                        <li class="menu imgMenu">
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
 
             </div>
         </header>
 
-        <main class="main portfolio">
+        <main class="main">
 
-            <div class="center">
+            <div class="main__content">
 
-                <div class="outer circle">
+                <!-- start -->
+                <div class="outer circle position">
                     <button>
-                        <img src="img/6.jpg" alt="" class="two">
-                    </button>
-                    <span></span>
-                    <span></span>
-                </div>
+                        <img src="img/1.jpg" alt="peper-net" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
 
-                <div class="outer circle">
-                    <button>
-                        <img src="img/6.jpg" alt="" class="two">
+
+                            <div class="info">
+                                <a class="target__site" target="_blank" href="https://inna-html.github.io/PEPER-NET/">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    HTML, CSS, JS
+                                </p>
+                                Landing page layout with Javascript for adding a header-burger
+                            </div>
+                        </div>
                     </button>
                     <span></span>
                     <span></span>
                 </div>
-                <!-- <h4>React, CSS </h4> -->
-                <div class="outer circle">
+                <!-- end -->
+
+                <!-- start -->
+                <div class="outer circle position">
                     <button>
-                        <img src="img/6.jpg" alt="" class="two">
+                        <img src="img/3.jpg" alt="to-do" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
+
+                            <div class="info">
+                                <a class="target__site" target="_blank" href="https://inna-html.github.io/to-do/">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    HTML, CSS, JS
+                                </p>
+                                Your todos
+                            </div>
+
+                        </div>
                     </button>
                     <span></span>
                     <span></span>
                 </div>
-                <!-- <h4>React, CSS </h4> -->
-                <div class="outer circle">
+                <!-- end -->
+
+                <!-- start -->
+                <div class="outer circle position">
                     <button>
-                        <img src="img/6.jpg" alt="" class="two">
+                        <img src="img/4.jpg" alt="fooding" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
+
+                            <div class="info">
+                                <a class="target__site" target="_blank" href="https://inna-html.github.io/fooding/">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    HTML, CSS, JS
+                                </p>
+                                Pages layout using HTML and CSS, as well as interactive Javascript
+                            </div>
+
+                        </div>
                     </button>
                     <span></span>
                     <span></span>
                 </div>
-                <!-- <h4>React, CSS </h4> -->
-                <div class="outer circle">
+                <!-- end -->
+
+                <!-- start -->
+                <div class="outer circle position">
                     <button>
-                        <img src="img/6.jpg" alt="" class="two">
+                        <img src="img/5.jpg" alt="Ryuta_Kawashima" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
+
+                            <div class="info">
+                                <a class="target__site" target="_blank"
+                                    href="https://inna-html.github.io/Ryuta_Kawashima">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    HTML, CSS, JS
+                                </p>
+                                Ryuta Kawashima's exercises are aimed at training the brain
+                            </div>
+
+                        </div>
                     </button>
                     <span> </span>
                     <span></span>
                 </div>
+                <!-- end -->
 
-                <!-- <h4>React, CSS </h4> -->
+                <!-- start -->
+                <div class="outer circle position">
+                    <button>
+                        <img src="img/2.jpg" alt="weather-app" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
+
+                            <div class="info">
+                                <a class="target__site" target="_blank" href="https://inna-html.github.io/weather-app/">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    REACT
+                                </p>
+                                The simple weather app to view the current weather in your city
+                            </div>
+
+                        </div>
+                    </button>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- end -->
+
+                <!-- start -->
+                <div class="outer circle position">
+                    <button>
+                        <img src="img/6.png" alt="makeup_products" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
+
+                            <div class="info">
+                                <a class="target__site" target="_blank" href="https://inna-html.github.io/makeup_products">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    REACT
+                                </p>
+                                cosmetics products
+                            </div>
+
+                        </div>
+                    </button>
+                    <span> </span>
+                    <span></span>
+                </div>
+                <!-- end -->
+
+                <!-- start -->
+                <div class="outer circle position">
+                    <button>
+                        <img src="img/7.png" alt="game" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
+
+                            <div class="info">
+                                <a class="target__site" target="_blank" href="https://inna-html.github.io/game/">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    html, css, js
+                                </p>
+                                a simple game 2048
+                            </div>
+
+                        </div>
+                    </button>
+                    <span> </span>
+                    <span></span>
+                </div>
+                <!-- end -->
+
+                <!-- start -->
+                <div class="outer circle position">
+                    <button>
+                        <img src="img/8.png" alt="rickAndMorty" class="two">
+                        <div class="click__info">
+                            <p class="click__info_color">
+                                Info
+                            </p>
+
+                            <div class="info">
+                                <a class="target__site" target="_blank" href="https://inna-html.github.io/rickAndMorty/">
+                                    [ visit ]
+                                </a>
+                                <p class="tools__link">
+                                    Angular
+                                </p>
+                                Rick and Morty fan site
+                            </div>
+
+                        </div>
+                    </button>
+                    <span> </span>
+                    <span></span>
+                </div>
+                <!-- end -->
 
             </div>
 
         </main>
 
         <footer class="footer">
-            <ul class="links">
-                <li>
-                    <a class="link" href="https://discord.com/l_of_d" target="_blank">
-                        <img class="footer-img" src="./img/ds.png" alt="discord">
-                        Discord
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="https://t.me/l_of_d/" target="_blank">
-                        <img class="footer-img" src="./img/tg.png" alt="telegram">
-                        Telegram
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="https://github.com/Inna-html" target="_blank">
-                        <img class="footer-img github" src="./img/git1.png" alt="GitHub">
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+            <div class="footer__content">
+                <ul class="links">
+                    <li>
+                        <a class="link" href="https://t.me/l_of_d/" target="_blank">
+                            <img class="footer-img" src="./img/tg.png" alt="telegram">
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://github.com/Inna-html" target="_blank">
+                            <img class="footer-img github" src="./img/git1.png" alt="GitHub">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
-
-
-
-
-
 
     </div>
 
-    <!-- <script src="./index.js"></script> -->
 </body>
 
 </html>
